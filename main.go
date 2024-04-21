@@ -61,7 +61,7 @@ func main() {
    password := r.Form.Get("password") // Получение пароля из формы
 
    if !CompareDatas(database, login, password) { // Проверка соответствия логина и пароля
-    // Формирование HTML-страницы с ошибкой
+    // Формирование html-страницы с ошибкой
     errorHTML := `<!DOCTYPE html>
 <html>
 <head>
@@ -78,7 +78,7 @@ func main() {
     http.Redirect(w, r, "/calculator", http.StatusSeeOther) // Перенаправление на страницу калькулятора
    }
   } 
-  // Чтение файла с HTML-шаблоном для страницы входа 
+  // Чтение файла с html-шаблоном для страницы входа 
   html, err := os.ReadFile("html/login.html") 
   if err != nil {
    http.Error(w, fmt.Sprintf("Ошибка чтения файла: %v", err), http.StatusInternalServerError) // Обработка ошибки чтения файла
