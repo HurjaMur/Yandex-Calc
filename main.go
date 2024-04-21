@@ -28,7 +28,7 @@ func main() {
     http.Redirect(w, r, "/login", http.StatusSeeOther) // Перенаправление на страницу входа
     return
    } else {
-    // Формирование HTML-страницы с ошибкой
+    // Формирование html-страницы с ошибкой
     errorHTML := `<!DOCTYPE html>
 <html>
 <head>
