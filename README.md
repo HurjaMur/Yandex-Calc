@@ -18,6 +18,7 @@ $ git clone https://github.com/HurjaMur/Yandex-Calc.git
 $ go add github.com/mattn/go-sqlite3                                                             
 $ docker build -t calc:v1 . (ждём пока забилдится)                                                      
 $ docker run -p 8000:8000 calc:v1    
+Выражения должны быть типа "1+1-1/1*1" скобочки, пробелы и иные символы недопустимы, только цифры и знаки +-*/
 
 # Что в проекте реализовано:
 ### html оформление
